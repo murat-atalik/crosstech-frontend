@@ -1,0 +1,29 @@
+$background: #fbfbfb;
+$alert-color: #ffe5e5;
+$success: #46af32;
+$input-border: #267fea;
+$input-inner: #f0f8ff;
+$warning-border: #f77474;
+$warning-inner: #fff2f2;
+$grey-500: #99a0a7;
+$grey-400: #555555;
+$grey-300: #3e3e3e;
+$grey-200: #525252;
+$grey-100: #b1b1b1;
+
+$white-500: #ebebeb;
+$white-400: #eaeaea;
+$white-300: #f4f4f4;
+$white-200: #f2f2f2;
+$white-100: #ffffff;
+
+$link-grey: #e0e0e0;
+
+$vw-viewport: 1920px;
+@function get-vw($px-vw) {
+  @return ($px-vw * 100vw) / $vw-viewport;
+}
+$vh-viewport: 1080px;
+@function get-vh($px-vh) {
+  @return ($px-vh * 100vh) / $vh-viewport;
+}

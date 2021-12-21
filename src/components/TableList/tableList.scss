@@ -1,0 +1,107 @@
+@import '../../style/variables';
+.table-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100vw - 18rem);
+  .table-container {
+    height: 60vh;
+    width: 100%;
+  }
+}
+.table-list-paper {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  min-width: 300px;
+  margin: 1rem 2rem 1rem 1rem;
+  background-color: $white-100;
+  padding: 50px 0 1rem 0;
+  border-radius: 0.75rem;
+}
+.table-list-title {
+  position: absolute;
+  top: -30px;
+  background-color: $input-border;
+  max-width: calc(800px - 2rem);
+  width: calc(100% - 2rem);
+  min-width: calc(300px - 2rem);
+  height: 60px;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: $white-100;
+}
+.table-status-0,
+.table-status-1,
+.table-status-2 {
+  color: $white-100;
+  padding: 0.55 em 0.9 em;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.table-status-0 {
+  background-color: #ff8c00;
+}
+.table-status-1 {
+  background-color: #00bd00;
+}
+.table-status-2 {
+  background-color: #dc143c;
+}
+.table-description {
+  > p {
+    width: calc(800px - 30rem);
+    min-width: 10vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+.table-title {
+  > p {
+    width: calc(800px - 40rem);
+    min-width: 10vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .table-list-container {
+    width: calc(100vw - 2rem);
+  }
+  .table-description {
+    > p {
+      width: calc(800px - 30rem);
+      min-width: 10vw;
+    }
+  }
+  .table-list-paper {
+    margin: 0;
+  }
+  .table-container-pagination {
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}

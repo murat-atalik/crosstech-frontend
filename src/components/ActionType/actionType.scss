@@ -1,0 +1,10 @@
+@import '../../style/variables';
+
+.action-type-button {
+  color: $grey-300;
+  &-actions {
+    > p {
+      margin-left: 10px;
+    }
+  }
+}

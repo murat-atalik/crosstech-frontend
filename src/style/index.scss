@@ -1,0 +1,67 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,600&display=swap%27');
+@import './variables';
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar {
+  display: none;
+}
+
+.Toastify__toast {
+  border-radius: 8px !important;
+  width: 320px !important;
+  height: 60px !important;
+  margin-right: 11px !important;
+  top: 0px !important;
+  right: 0px !important;
+  --toastify-color-success: #f1fff0;
+  --toastify-color-error: #ffe5e5;
+
+  --toastify-icon-color-success: #46af32;
+  --toastify-icon-color-error: #f77474;
+
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 60px;
+  --toastify-toast-max-height: 60px;
+  --toastify-font-family: 'Nunito', sans-serif;
+  --toastify-z-index: 9999;
+
+  //Used only for colored theme
+  --toastify-text-color-success: #46af32;
+  --toastify-text-color-error: #f77474;
+}
+@media only screen and (max-width: 800px) {
+  .Toastify__toast {
+    margin-top: 70px !important;
+  }
+  .page-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  .navbar {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Toastify__toast {
+    width: calc(100vw - 20px) !important;
+    margin-top: 10px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .Toastify__toast {
+    border-radius: 8px !important;
+    width: calc(100vw - 20px) !important;
+  }
+}

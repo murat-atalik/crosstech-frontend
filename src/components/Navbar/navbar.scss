@@ -1,0 +1,26 @@
+@import '../../style/variables';
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(63, 63, 63);
+  background: linear-gradient(105deg, rgb(66, 66, 74), rgb(25, 25, 25));
+}
+.navbar-container-menu,
+.navbar-container-account {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  > h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .navbar-container-account {
+    > h5 {
+      display: none;
+    }
+  }
+}

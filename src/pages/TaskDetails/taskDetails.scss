@@ -1,0 +1,84 @@
+@import '../../style/variables';
+
+.task-detail {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task-detail-container {
+  background-color: $white-100;
+  max-width: 800px;
+  width: 100%;
+  min-width: 300px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin: 2rem 1rem 2rem 0;
+
+  &-title {
+    position: absolute;
+    bottom: calc(100% - 30px);
+    background-color: $input-border;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $white-100;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    min-height: 80px;
+    height: fit-content;
+    max-width: calc(800px - 2rem);
+    width: calc(100% - 2rem);
+    min-width: calc(300px - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > h2 {
+      width: 90%;
+    }
+    &-action {
+      color: $white-400;
+    }
+  }
+  &-body {
+    margin-top: 40px;
+    &-detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    &-department {
+      width: calc(50% - 30px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: $grey-100;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    &-creator {
+      width: calc(50% - 30px);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: $grey-100;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    &-description {
+      margin-top: 1rem;
+      padding: 1rem;
+      color: $grey-300;
+      font-size: 1em;
+      min-height: 200px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .task-detail-container {
+    margin: 0;
+  }
+}
