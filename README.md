@@ -28,10 +28,9 @@ After downloading the files, simply type the following code into the terminal.
 ### Caution
 
 - eslint extension not supported v8.+
-- If you are using a newer version eslint npm install command may error. You can use
 
 ```
-npm install --force
+npm install 
 ```
 
 or
